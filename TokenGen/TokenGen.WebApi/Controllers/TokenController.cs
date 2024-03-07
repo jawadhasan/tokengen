@@ -16,5 +16,12 @@ namespace TokenGen.WebApi.Controllers
                 Issuer = Environment.MachineName
             };
         }
+
+
+        [HttpGet("error")]
+        public dynamic Error()
+        {
+            throw new ApplicationException("appication issue");
+        }
     }
 }

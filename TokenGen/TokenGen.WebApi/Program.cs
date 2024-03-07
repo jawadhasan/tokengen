@@ -1,4 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
+//builder.WebHost.UseUrls("http://*:5000");
 
 // Add services to the container.
 
@@ -20,4 +21,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+//app.Urls.Add("http://*:5000");
+
+app.Run("http://*:5000");
+
