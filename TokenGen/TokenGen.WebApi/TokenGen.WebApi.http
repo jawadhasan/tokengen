@@ -1,0 +1,6 @@
+@TokenGen.WebApi_HostAddress = http://localhost:5028
+
+GET {{TokenGen.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
